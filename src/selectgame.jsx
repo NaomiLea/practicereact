@@ -9,6 +9,7 @@ class Select extends React.Component {
           <option>Game one</option>
           <option>Game two</option>
         </select>
+        <button>Play</button>
       </div>
     );
   }

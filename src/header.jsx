@@ -1,6 +1,6 @@
 import React from 'react';
 import Select from './selectgame.jsx'
-
+import Clicker from './clicking.jsx';
 class Header extends React.Component {
 
 state = {name: null};
@@ -18,6 +18,7 @@ state = {name: null};
             <button className="change" onClick={()=>this.changeName()} label="Change player">Change player</button>
             <h2>Choose a game</h2>
             <Select/>
+            <Clicker/>
         </div>
       </div>
 
