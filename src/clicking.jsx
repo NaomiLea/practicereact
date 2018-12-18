@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
+import Result from './points.jsx';
+
+
 
 class Clicker extends Component {
-  state = {counter: 0};
-  handleClick = () => {
-    this.setState((prevState) =>({
-      counter: prevState.counter + 1
-    }));
-  }
+
   render() {
     return (
       <div className="clicker-wrapper">
-        <button className="ballClick" onClick={this.handleClick}>
-          {this.state.counter}
+        <button className="ballClick" onClick={() => this.props.incrementCounter()}>
+          Click me
         </button>
       </div>
     );
