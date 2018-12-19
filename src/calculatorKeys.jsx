@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import Result from './points.jsx';
 
-
-
-class Clicker extends Component {
+class CalculatorKeys extends Component {
 handleClick = () => {
   this.props.incrementCounter(this.props.incrementValue);
 };
   render() {
+    console.log(this.props)
     return (
       <div className="calculator">
-        <button className="ballClick" onClick={this.handleClick}>
+        <button className="" onClick={this.handleClick}>
           +{this.props.incrementValue}
         </button>
       </div>
@@ -18,4 +16,4 @@ handleClick = () => {
   }
 }
 
-export default Clicker;
+export default CalculatorKeys;
