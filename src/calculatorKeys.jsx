@@ -7,9 +7,9 @@ handleClick = () => {
   render() {
     console.log(this.props)
     return (
-      <div className="calculator">
+      <div className="calculatorkey">
         <button className="" onClick={this.handleClick}>
-          +{this.props.incrementValue}
+          {this.props.incrementValue}
         </button>
       </div>
     );

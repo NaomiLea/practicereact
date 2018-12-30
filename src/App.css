@@ -62,3 +62,43 @@
 .ballClick:active, .ballClick:focus {
   outline: none;
 }
+
+.calculator {
+  background-color: #cba08e;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.calculatorkey {
+  margin: 10px;
+}
+
+.calculatorkey button {
+  border: none;
+  width: 100px;
+  height: 100px;
+  background-color: #f6cfca;
+  border-radius: 6px;
+  font-size: 26px;
+}
+
+.calculatorkey button:focus {
+  outline: 0;
+}
+
+.calculatorkey button:active {
+  opacity: 0.7;
+}
+
+.card {
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+  height: 100px;
+}
